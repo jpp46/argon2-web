@@ -5,5 +5,3 @@ emcc -std=gnu99 -O3 -flto --closure 1 \
 -s INLINING_LIMIT=1 -s FILESYSTEM=0 -s ALLOW_MEMORY_GROWTH=1 \
 -s MODULARIZE -s EXPORTED_FUNCTIONS='["_secret", "_argon_hash"]' -s EXPORTED_RUNTIME_METHODS='["cwrap", "ccall"]' \
 argon2-web.c -o argon2-web.js
-
-# -s MODULARIZE -s EXPORTED_FUNCTIONS='["_secret", "_argon_hash"]' -s EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' \
